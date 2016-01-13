@@ -39,9 +39,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.txt_spouse = new System.Windows.Forms.TextBox();
             this.temp_adress = new System.Windows.Forms.Label();
-            this.txt_temp_adress = new System.Windows.Forms.TextBox();
-            this.txt_city = new System.Windows.Forms.TextBox();
-            this.lbl_city = new System.Windows.Forms.Label();
+            this.txt_adress = new System.Windows.Forms.TextBox();
             this.lbl_birthdate = new System.Windows.Forms.Label();
             this.dtp_birthdate = new System.Windows.Forms.DateTimePicker();
             this.dtp_anniversary = new System.Windows.Forms.DateTimePicker();
@@ -52,6 +50,15 @@
             this.lbl_mobile = new System.Windows.Forms.Label();
             this.txt_fax = new System.Windows.Forms.TextBox();
             this.lbl_fax = new System.Windows.Forms.Label();
+            this.btn_save = new System.Windows.Forms.Button();
+            this.btn_update = new System.Windows.Forms.Button();
+            this.btn_delete = new System.Windows.Forms.Button();
+            this.btn_reset = new System.Windows.Forms.Button();
+            this.btn_exit = new System.Windows.Forms.Button();
+            this.lbl_email = new System.Windows.Forms.Label();
+            this.txt_email = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txt_city = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // cbo_customerId
@@ -65,7 +72,7 @@
             // lbl_CustomerId
             // 
             this.lbl_CustomerId.AutoSize = true;
-            this.lbl_CustomerId.Location = new System.Drawing.Point(86, 37);
+            this.lbl_CustomerId.Location = new System.Drawing.Point(77, 38);
             this.lbl_CustomerId.Name = "lbl_CustomerId";
             this.lbl_CustomerId.Size = new System.Drawing.Size(59, 13);
             this.lbl_CustomerId.TabIndex = 1;
@@ -90,7 +97,7 @@
             // lbl_title
             // 
             this.lbl_title.AutoSize = true;
-            this.lbl_title.Location = new System.Drawing.Point(118, 69);
+            this.lbl_title.Location = new System.Drawing.Point(109, 70);
             this.lbl_title.Name = "lbl_title";
             this.lbl_title.Size = new System.Drawing.Size(27, 13);
             this.lbl_title.TabIndex = 4;
@@ -129,7 +136,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(102, 132);
+            this.label1.Location = new System.Drawing.Point(93, 133);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(43, 13);
             this.label1.TabIndex = 4;
@@ -145,39 +152,23 @@
             // temp_adress
             // 
             this.temp_adress.AutoSize = true;
-            this.temp_adress.Location = new System.Drawing.Point(53, 167);
+            this.temp_adress.Location = new System.Drawing.Point(97, 168);
             this.temp_adress.Name = "temp_adress";
-            this.temp_adress.Size = new System.Drawing.Size(92, 13);
+            this.temp_adress.Size = new System.Drawing.Size(39, 13);
             this.temp_adress.TabIndex = 4;
-            this.temp_adress.Text = "Temporary Adress";
+            this.temp_adress.Text = "Adress";
             // 
-            // txt_temp_adress
+            // txt_adress
             // 
-            this.txt_temp_adress.Location = new System.Drawing.Point(151, 167);
-            this.txt_temp_adress.Name = "txt_temp_adress";
-            this.txt_temp_adress.Size = new System.Drawing.Size(200, 20);
-            this.txt_temp_adress.TabIndex = 5;
-            // 
-            // txt_city
-            // 
-            this.txt_city.Location = new System.Drawing.Point(151, 210);
-            this.txt_city.Name = "txt_city";
-            this.txt_city.Size = new System.Drawing.Size(200, 20);
-            this.txt_city.TabIndex = 7;
-            // 
-            // lbl_city
-            // 
-            this.lbl_city.AutoSize = true;
-            this.lbl_city.Location = new System.Drawing.Point(53, 210);
-            this.lbl_city.Name = "lbl_city";
-            this.lbl_city.Size = new System.Drawing.Size(92, 13);
-            this.lbl_city.TabIndex = 6;
-            this.lbl_city.Text = "Temporary Adress";
+            this.txt_adress.Location = new System.Drawing.Point(151, 167);
+            this.txt_adress.Name = "txt_adress";
+            this.txt_adress.Size = new System.Drawing.Size(200, 20);
+            this.txt_adress.TabIndex = 5;
             // 
             // lbl_birthdate
             // 
             this.lbl_birthdate.AutoSize = true;
-            this.lbl_birthdate.Location = new System.Drawing.Point(381, 131);
+            this.lbl_birthdate.Location = new System.Drawing.Point(485, 134);
             this.lbl_birthdate.Name = "lbl_birthdate";
             this.lbl_birthdate.Size = new System.Drawing.Size(52, 13);
             this.lbl_birthdate.TabIndex = 8;
@@ -185,14 +176,14 @@
             // 
             // dtp_birthdate
             // 
-            this.dtp_birthdate.Location = new System.Drawing.Point(469, 124);
+            this.dtp_birthdate.Location = new System.Drawing.Point(554, 128);
             this.dtp_birthdate.Name = "dtp_birthdate";
             this.dtp_birthdate.Size = new System.Drawing.Size(200, 20);
             this.dtp_birthdate.TabIndex = 9;
             // 
             // dtp_anniversary
             // 
-            this.dtp_anniversary.Location = new System.Drawing.Point(469, 167);
+            this.dtp_anniversary.Location = new System.Drawing.Point(554, 171);
             this.dtp_anniversary.Name = "dtp_anniversary";
             this.dtp_anniversary.Size = new System.Drawing.Size(200, 20);
             this.dtp_anniversary.TabIndex = 11;
@@ -200,7 +191,7 @@
             // lbl_anniversary
             // 
             this.lbl_anniversary.AutoSize = true;
-            this.lbl_anniversary.Location = new System.Drawing.Point(371, 167);
+            this.lbl_anniversary.Location = new System.Drawing.Point(475, 174);
             this.lbl_anniversary.Name = "lbl_anniversary";
             this.lbl_anniversary.Size = new System.Drawing.Size(62, 13);
             this.lbl_anniversary.TabIndex = 10;
@@ -208,7 +199,7 @@
             // 
             // txt_phone
             // 
-            this.txt_phone.Location = new System.Drawing.Point(469, 210);
+            this.txt_phone.Location = new System.Drawing.Point(554, 214);
             this.txt_phone.Name = "txt_phone";
             this.txt_phone.Size = new System.Drawing.Size(200, 20);
             this.txt_phone.TabIndex = 13;
@@ -216,7 +207,7 @@
             // lbl_phone
             // 
             this.lbl_phone.AutoSize = true;
-            this.lbl_phone.Location = new System.Drawing.Point(396, 210);
+            this.lbl_phone.Location = new System.Drawing.Point(500, 213);
             this.lbl_phone.Name = "lbl_phone";
             this.lbl_phone.Size = new System.Drawing.Size(37, 13);
             this.lbl_phone.TabIndex = 12;
@@ -224,7 +215,7 @@
             // 
             // txt_mobile
             // 
-            this.txt_mobile.Location = new System.Drawing.Point(469, 238);
+            this.txt_mobile.Location = new System.Drawing.Point(554, 242);
             this.txt_mobile.Name = "txt_mobile";
             this.txt_mobile.Size = new System.Drawing.Size(200, 20);
             this.txt_mobile.TabIndex = 15;
@@ -232,7 +223,7 @@
             // lbl_mobile
             // 
             this.lbl_mobile.AutoSize = true;
-            this.lbl_mobile.Location = new System.Drawing.Point(396, 245);
+            this.lbl_mobile.Location = new System.Drawing.Point(500, 248);
             this.lbl_mobile.Name = "lbl_mobile";
             this.lbl_mobile.Size = new System.Drawing.Size(37, 13);
             this.lbl_mobile.TabIndex = 14;
@@ -240,7 +231,7 @@
             // 
             // txt_fax
             // 
-            this.txt_fax.Location = new System.Drawing.Point(469, 273);
+            this.txt_fax.Location = new System.Drawing.Point(554, 277);
             this.txt_fax.Name = "txt_fax";
             this.txt_fax.Size = new System.Drawing.Size(200, 20);
             this.txt_fax.TabIndex = 17;
@@ -248,18 +239,102 @@
             // lbl_fax
             // 
             this.lbl_fax.AutoSize = true;
-            this.lbl_fax.Location = new System.Drawing.Point(409, 273);
+            this.lbl_fax.Location = new System.Drawing.Point(513, 276);
             this.lbl_fax.Name = "lbl_fax";
             this.lbl_fax.Size = new System.Drawing.Size(24, 13);
             this.lbl_fax.TabIndex = 16;
             this.lbl_fax.Text = "Fax";
-            this.lbl_fax.Click += new System.EventHandler(this.lbl_fax_Click);
+            // 
+            // btn_save
+            // 
+            this.btn_save.Location = new System.Drawing.Point(469, 374);
+            this.btn_save.Name = "btn_save";
+            this.btn_save.Size = new System.Drawing.Size(82, 57);
+            this.btn_save.TabIndex = 18;
+            this.btn_save.Text = "save";
+            this.btn_save.UseVisualStyleBackColor = true;
+            this.btn_save.Click += new System.EventHandler(this.btn_save_Click);
+            // 
+            // btn_update
+            // 
+            this.btn_update.Location = new System.Drawing.Point(557, 374);
+            this.btn_update.Name = "btn_update";
+            this.btn_update.Size = new System.Drawing.Size(82, 57);
+            this.btn_update.TabIndex = 18;
+            this.btn_update.Text = "Update";
+            this.btn_update.UseVisualStyleBackColor = true;
+            // 
+            // btn_delete
+            // 
+            this.btn_delete.Location = new System.Drawing.Point(645, 374);
+            this.btn_delete.Name = "btn_delete";
+            this.btn_delete.Size = new System.Drawing.Size(82, 57);
+            this.btn_delete.TabIndex = 18;
+            this.btn_delete.Text = "Delete";
+            this.btn_delete.UseVisualStyleBackColor = true;
+            // 
+            // btn_reset
+            // 
+            this.btn_reset.Location = new System.Drawing.Point(733, 374);
+            this.btn_reset.Name = "btn_reset";
+            this.btn_reset.Size = new System.Drawing.Size(82, 57);
+            this.btn_reset.TabIndex = 18;
+            this.btn_reset.Text = "Reset";
+            this.btn_reset.UseVisualStyleBackColor = true;
+            // 
+            // btn_exit
+            // 
+            this.btn_exit.Location = new System.Drawing.Point(821, 374);
+            this.btn_exit.Name = "btn_exit";
+            this.btn_exit.Size = new System.Drawing.Size(82, 57);
+            this.btn_exit.TabIndex = 18;
+            this.btn_exit.Text = "Exit";
+            this.btn_exit.UseVisualStyleBackColor = true;
+            // 
+            // lbl_email
+            // 
+            this.lbl_email.AutoSize = true;
+            this.lbl_email.Location = new System.Drawing.Point(513, 302);
+            this.lbl_email.Name = "lbl_email";
+            this.lbl_email.Size = new System.Drawing.Size(32, 13);
+            this.lbl_email.TabIndex = 16;
+            this.lbl_email.Text = "Email";
+            // 
+            // txt_email
+            // 
+            this.txt_email.Location = new System.Drawing.Point(554, 303);
+            this.txt_email.Name = "txt_email";
+            this.txt_email.Size = new System.Drawing.Size(200, 20);
+            this.txt_email.TabIndex = 17;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(112, 194);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(24, 13);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "City";
+            // 
+            // txt_city
+            // 
+            this.txt_city.Location = new System.Drawing.Point(151, 193);
+            this.txt_city.Name = "txt_city";
+            this.txt_city.Size = new System.Drawing.Size(200, 20);
+            this.txt_city.TabIndex = 5;
             // 
             // CustomerDetails
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(908, 488);
+            this.Controls.Add(this.btn_exit);
+            this.Controls.Add(this.btn_reset);
+            this.Controls.Add(this.btn_delete);
+            this.Controls.Add(this.btn_update);
+            this.Controls.Add(this.btn_save);
+            this.Controls.Add(this.txt_email);
+            this.Controls.Add(this.lbl_email);
             this.Controls.Add(this.txt_fax);
             this.Controls.Add(this.lbl_fax);
             this.Controls.Add(this.txt_mobile);
@@ -271,8 +346,8 @@
             this.Controls.Add(this.dtp_birthdate);
             this.Controls.Add(this.lbl_birthdate);
             this.Controls.Add(this.txt_city);
-            this.Controls.Add(this.lbl_city);
-            this.Controls.Add(this.txt_temp_adress);
+            this.Controls.Add(this.txt_adress);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.txt_spouse);
             this.Controls.Add(this.temp_adress);
             this.Controls.Add(this.lbl_name);
@@ -304,9 +379,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txt_spouse;
         private System.Windows.Forms.Label temp_adress;
-        private System.Windows.Forms.TextBox txt_temp_adress;
-        private System.Windows.Forms.TextBox txt_city;
-        private System.Windows.Forms.Label lbl_city;
+        private System.Windows.Forms.TextBox txt_adress;
         private System.Windows.Forms.Label lbl_birthdate;
         private System.Windows.Forms.DateTimePicker dtp_birthdate;
         private System.Windows.Forms.DateTimePicker dtp_anniversary;
@@ -317,5 +390,14 @@
         private System.Windows.Forms.Label lbl_mobile;
         private System.Windows.Forms.TextBox txt_fax;
         private System.Windows.Forms.Label lbl_fax;
+        private System.Windows.Forms.Button btn_save;
+        private System.Windows.Forms.Button btn_update;
+        private System.Windows.Forms.Button btn_delete;
+        private System.Windows.Forms.Button btn_reset;
+        private System.Windows.Forms.Button btn_exit;
+        private System.Windows.Forms.Label lbl_email;
+        private System.Windows.Forms.TextBox txt_email;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox txt_city;
     }
 }
