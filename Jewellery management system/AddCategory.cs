@@ -53,5 +53,10 @@ namespace Jewellery_management_system
         {
             showingridwiew();
         }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
