@@ -1,0 +1,13 @@
+C:\Users\Utshab Luitel\Desktop\GidHub\Jewellery management system\Jewellery management system\bin\Debug\Jewellery management system.exe.config
+C:\Users\Utshab Luitel\Desktop\GidHub\Jewellery management system\Jewellery management system\bin\Debug\Jewellery management system.exe
+C:\Users\Utshab Luitel\Desktop\GidHub\Jewellery management system\Jewellery management system\bin\Debug\Jewellery management system.pdb
+C:\Users\Utshab Luitel\Desktop\GidHub\Jewellery management system\Jewellery management system\obj\Debug\Jewellery management system.csprojResolveAssemblyReference.cache
+C:\Users\Utshab Luitel\Desktop\GidHub\Jewellery management system\Jewellery management system\obj\Debug\Jewellery_management_system.Properties.Resources.resources
+C:\Users\Utshab Luitel\Desktop\GidHub\Jewellery management system\Jewellery management system\obj\Debug\Jewellery management system.csproj.GenerateResource.Cache
+C:\Users\Utshab Luitel\Desktop\GidHub\Jewellery management system\Jewellery management system\obj\Debug\Jewellery management system.exe
+C:\Users\Utshab Luitel\Desktop\GidHub\Jewellery management system\Jewellery management system\obj\Debug\Jewellery management system.pdb
+C:\Users\Utshab Luitel\Desktop\GidHub\Jewellery management system\Jewellery management system\obj\Debug\Jewellery_management_system.AddCategory.resources
+C:\Users\Utshab Luitel\Desktop\GidHub\Jewellery management system\Jewellery management system\bin\Debug\BLL.dll
+C:\Users\Utshab Luitel\Desktop\GidHub\Jewellery management system\Jewellery management system\bin\Debug\DAL.dll
+C:\Users\Utshab Luitel\Desktop\GidHub\Jewellery management system\Jewellery management system\bin\Debug\BLL.pdb
+C:\Users\Utshab Luitel\Desktop\GidHub\Jewellery management system\Jewellery management system\bin\Debug\DAL.pdb
