@@ -58,6 +58,18 @@
     <Compile Include="AddProduct.Designer.cs">
       <DependentUpon>AddProduct.cs</DependentUpon>
     </Compile>
+    <Compile Include="Add_Update_Delete_Items.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add_Update_Delete_Items.Designer.cs">
+      <DependentUpon>Add_Update_Delete_Items.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add_Update_Delete_Items_update.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add_Update_Delete_Items_update.Designer.cs">
+      <DependentUpon>Add_Update_Delete_Items_update.cs</DependentUpon>
+    </Compile>
     <Compile Include="CustomerDetails.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -89,6 +101,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AddProduct.resx">
       <DependentUpon>AddProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add_Update_Delete_Items.resx">
+      <DependentUpon>Add_Update_Delete_Items.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add_Update_Delete_Items_update.resx">
+      <DependentUpon>Add_Update_Delete_Items_update.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CustomerDetails.resx">
       <DependentUpon>CustomerDetails.cs</DependentUpon>

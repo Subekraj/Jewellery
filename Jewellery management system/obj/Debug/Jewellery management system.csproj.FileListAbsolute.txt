@@ -29,3 +29,5 @@ C:\Users\SJNeyos\Desktop\newrepossss\Jewellery management system\obj\Debug\Jewel
 C:\Users\SJNeyos\Desktop\newrepossss\Jewellery management system\obj\Debug\Jewellery_management_system.Customer_Details_Update.resources
 C:\Users\SJNeyos\Desktop\newrepossss\Jewellery management system\obj\Debug\Jewellery_management_system.Supplier_Details.resources
 C:\Users\SJNeyos\Desktop\newrepossss\Jewellery management system\obj\Debug\Jewellery_management_system.Supplier_details_update.resources
+C:\Users\SJNeyos\Desktop\newrepossss\Jewellery management system\obj\Debug\Jewellery_management_system.Add_Update_Delete_Items.resources
+C:\Users\SJNeyos\Desktop\newrepossss\Jewellery management system\obj\Debug\Jewellery_management_system.Add_Update_Delete_Items_update.resources

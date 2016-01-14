@@ -16,7 +16,7 @@ namespace Jewellery_management_system
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Supplier_Details());
+            Application.Run(new Add_Update_Delete_Items());
         }
     }
 }

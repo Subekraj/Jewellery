@@ -40,5 +40,21 @@ namespace Jewellery_management_system
                 supply_dataGridView.DataSource = dt;
             }
         }
+
+        private void btn_update_Click(object sender, EventArgs e)
+        {
+        
+       
+            int UpdateCustomerDetailsTable = supp.UpdateIntoSupplierDetails(cbo_supplier_type.Text, Convert.ToInt32(txt_newSupplierID.Text),cbo_title.Text,cbo_name.Text,Convert.ToInt32(txt_contact.Text),txt_adress.Text,Convert.ToInt32(txt_phone.Text),Convert.ToInt32(txt_mobile),Convert.ToInt32(txt_fax),txt_email.Text,txt_city.Text,Convert.ToInt32(txt_eccno.Text),Convert.ToInt32(txt_cst.Text),txt_division.Text,Convert.ToInt32(txt_pan.Text));
+            if (UpdateCustomerDetailsTable > 0)
+            {
+
+                MessageBox.Show("data Updated");
+            }
+            else
+            {
+                MessageBox.Show("no updated");
+            }
+        }
     }
 }

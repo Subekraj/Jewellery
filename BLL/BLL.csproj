@@ -43,6 +43,7 @@
     <Compile Include="BLLCategory.cs" />
     <Compile Include="BLLItem.cs" />
     <Compile Include="BLLCustomerDetails.cs" />
+    <Compile Include="BLLItem_Add_Update.cs" />
     <Compile Include="BLLSupplier_details.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
