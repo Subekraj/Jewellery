@@ -49,11 +49,35 @@ namespace Jewellery_management_system
             }
             else {
 
-                int supply = supp.InsertIntoSupplierDetails(Convert.ToInt32(cbo_supplierId.Text), cbo_supplier_type.Text, Convert.ToInt32(txt_newSupplierID.Text), cbo_title.Text, cbo_name.Text, Convert.ToInt32(txt_contact.Text), txt_adress.Text, Convert.ToInt32(txt_phone.Text), Convert.ToInt32(txt_mobile.Text), Convert.ToInt32(txt_fax.Text), txt_email.Text, txt_city.Text, Convert.ToInt32(txt_eccno.Text), Convert.ToInt32(txt_cst), txt_division.Text, Convert.ToInt32(txt_pan.Text));
+                int supply = supp.InsertIntoSupplierDetails(cbo_supplier_type.Text, Convert.ToInt32(txt_newSupplierID.Text), cbo_title.Text, cbo_name.Text, Convert.ToInt32(txt_contact.Text), txt_adress.Text, Convert.ToInt32(txt_phone.Text), Convert.ToInt32(txt_mobile.Text), Convert.ToInt32(txt_fax.Text), txt_email.Text, txt_city.Text, Convert.ToInt32(txt_eccno.Text), Convert.ToInt32(txt_cst), txt_division.Text, Convert.ToInt32(txt_pan.Text));
                 if (supply > 0) {
                     MessageBox.Show("data inserted");
                 }
             }
+        }
+
+        private void supply_dataGridView_RowHeaderMouseDoubleClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            Supplier_details_update ups = new Supplier_details_update();
+          
+            ups.cbo_supplierId.Text = Convert.ToInt32(supply_dataGridView.CurrentRow.Cells[0].Value).ToString();
+            ups.cbo_supplier_type.Text = supply_dataGridView.CurrentRow.Cells[1].Value.ToString();
+            ups.txt_newSupplierID.Text = Convert.ToInt32(supply_dataGridView.CurrentRow.Cells[2].Value).ToString();
+            ups.cbo_title.Text = supply_dataGridView.CurrentRow.Cells[3].Value.ToString();
+            ups.cbo_name.Text = supply_dataGridView.CurrentRow.Cells[4].Value.ToString();
+            ups.txt_contact.Text = Convert.ToInt32(supply_dataGridView.CurrentRow.Cells[5].Value).ToString();
+            ups.txt_adress.Text = supply_dataGridView.CurrentRow.Cells[6].Value.ToString();
+            ups.txt_phone.Text = Convert.ToInt32(supply_dataGridView.CurrentRow.Cells[7].Value).ToString();
+            ups.txt_mobile.Text = Convert.ToInt32(supply_dataGridView.CurrentRow.Cells[8].Value).ToString();
+            ups.txt_fax.Text = Convert.ToInt32(supply_dataGridView.CurrentRow.Cells[9].Value).ToString();
+            ups.txt_email.Text = supply_dataGridView.CurrentRow.Cells[10].Value.ToString();
+            ups.txt_city.Text = supply_dataGridView.CurrentRow.Cells[11].Value.ToString();
+            ups.txt_eccno.Text = Convert.ToInt32(supply_dataGridView.CurrentRow.Cells[12].Value).ToString();
+            ups.txt_cst.Text = Convert.ToInt32(supply_dataGridView.CurrentRow.Cells[13].Value).ToString();
+            ups.txt_division.Text = supply_dataGridView.CurrentRow.Cells[14].Value.ToString();
+            ups.txt_pan.Text = Convert.ToInt32(supply_dataGridView.CurrentRow.Cells[15].Value).ToString();
+
+            ups.Show();
         }
     }
 }

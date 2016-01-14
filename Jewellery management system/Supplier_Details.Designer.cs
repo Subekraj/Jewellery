@@ -608,6 +608,7 @@
             this.supply_dataGridView.ReadOnly = true;
             this.supply_dataGridView.Size = new System.Drawing.Size(875, 78);
             this.supply_dataGridView.TabIndex = 70;
+            this.supply_dataGridView.RowHeaderMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.supply_dataGridView_RowHeaderMouseDoubleClick);
             // 
             // supp_typ
             // 
@@ -621,6 +622,10 @@
             // cbo_supplier_type
             // 
             this.cbo_supplier_type.FormattingEnabled = true;
+            this.cbo_supplier_type.Items.AddRange(new object[] {
+            "supplier Type 1",
+            "supplier type 2 ",
+            "supplier type 3"});
             this.cbo_supplier_type.Location = new System.Drawing.Point(330, 13);
             this.cbo_supplier_type.Name = "cbo_supplier_type";
             this.cbo_supplier_type.Size = new System.Drawing.Size(121, 21);

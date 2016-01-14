@@ -78,6 +78,12 @@
     <Compile Include="Supplier_Details.Designer.cs">
       <DependentUpon>Supplier_Details.cs</DependentUpon>
     </Compile>
+    <Compile Include="Supplier_details_update.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supplier_details_update.Designer.cs">
+      <DependentUpon>Supplier_details_update.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="AddCategory.resx">
       <DependentUpon>AddCategory.cs</DependentUpon>
     </EmbeddedResource>
@@ -101,6 +107,9 @@
     </Compile>
     <EmbeddedResource Include="Supplier_Details.resx">
       <DependentUpon>Supplier_Details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supplier_details_update.resx">
+      <DependentUpon>Supplier_details_update.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
