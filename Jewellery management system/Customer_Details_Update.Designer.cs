@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.customerData = new System.Windows.Forms.DataGridView();
             this.cusdetails = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
@@ -68,7 +69,6 @@
             this.cbo_title = new System.Windows.Forms.ComboBox();
             this.cbo_customerId = new System.Windows.Forms.ComboBox();
             this.cudup = new System.Windows.Forms.Label();
-            this.customerData = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.customerData)).BeginInit();
             this.SuspendLayout();
@@ -80,6 +80,15 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(837, 207);
             this.panel1.TabIndex = 63;
+            // 
+            // customerData
+            // 
+            this.customerData.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.customerData.Location = new System.Drawing.Point(9, 7);
+            this.customerData.Name = "customerData";
+            this.customerData.Size = new System.Drawing.Size(825, 194);
+            this.customerData.TabIndex = 0;
+            this.customerData.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // cusdetails
             // 
@@ -191,6 +200,7 @@
             this.btn_update.TabIndex = 49;
             this.btn_update.Text = "Update";
             this.btn_update.UseVisualStyleBackColor = true;
+            this.btn_update.Click += new System.EventHandler(this.btn_update_Click);
             // 
             // txt_email
             // 
@@ -418,15 +428,6 @@
             this.cudup.Size = new System.Drawing.Size(111, 20);
             this.cudup.TabIndex = 62;
             this.cudup.Text = ": Update Form";
-            // 
-            // customerData
-            // 
-            this.customerData.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.customerData.Location = new System.Drawing.Point(9, 7);
-            this.customerData.Name = "customerData";
-            this.customerData.Size = new System.Drawing.Size(825, 194);
-            this.customerData.TabIndex = 0;
-            this.customerData.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // Customer_Details_Update
             // 

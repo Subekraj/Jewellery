@@ -24,18 +24,20 @@ namespace Jewellery_management_system
         { int parsedValue;
             //string new_customer_id, string customer_id, string title, string name, string spouse, string adress, string birthdate, string anniversary, int phone, int mobile, int fax, string email, string city
 
-            int InsertValuetoCustomerDetailsTable = cusdetail.InsertIntoCustomersDetails(txt_newCustomerID.Text,cbo_customerId.Text,cbo_title.Text,cbo_name.Text,txt_spouse.Text,txt_adress.Text,dtp_birthdate.Text,dtp_anniversary.Text, Convert.ToInt32(txt_phone.Text), Convert.ToInt32(txt_mobile.Text),Convert.ToInt32(txt_fax.Text),txt_email.Text,txt_city.Text);
-            if (txt_newCustomerID.Text == "" || cbo_customerId.Text == "" || cbo_title.Text == "" || cbo_name.Text == "" || txt_spouse.Text == "" || txt_adress.Text == "" || dtp_birthdate.Text == "" || dtp_anniversary.Text == "" || txt_phone.Text == "" || txt_mobile.Text == "" || txt_fax.Text == "" || txt_email.Text == "" || txt_city.Text == "") {
+            
+            if (txt_newCustomerID.Text == "" || cbo_title.Text == "" || cbo_name.Text == "" || txt_spouse.Text == "" || txt_adress.Text == "" || dtp_birthdate.Text == "" || dtp_anniversary.Text == "" || txt_phone.Text == "" || txt_mobile.Text == "" || txt_fax.Text == "" || txt_email.Text == "" || txt_city.Text == "")
+            {
                 MessageBox.Show("inputs are empty");
             }
-            else if (!int.TryParse(txt_phone.Text,out parsedValue)|| !int.TryParse(txt_mobile.Text,out parsedValue)||!int.TryParse(txt_fax.Text,out parsedValue)) {
+            else if (!int.TryParse(txt_phone.Text, out parsedValue) || !int.TryParse(txt_mobile.Text, out parsedValue) || !int.TryParse(txt_fax.Text, out parsedValue))
+            {
                 MessageBox.Show("type numbers in required fields");
             }
-            else if (InsertValuetoCustomerDetailsTable > 0) {
-                MessageBox.Show("Data Inserted");
-            }
             else {
-                MessageBox.Show("error While inserting Data");
+                int InsertValuetoCustomerDetailsTable = cusdetail.InsertIntoCustomersDetails(Convert.ToInt32(txt_newCustomerID.Text), cbo_title.Text, cbo_name.Text, txt_spouse.Text, txt_adress.Text, Convert.ToDateTime(dtp_birthdate.Text), Convert.ToDateTime(dtp_anniversary.Text), Convert.ToInt32(txt_phone.Text), Convert.ToInt32(txt_mobile.Text), Convert.ToInt32(txt_fax.Text), txt_email.Text, txt_city.Text);
+                if (InsertValuetoCustomerDetailsTable>0) {
+                    MessageBox.Show("data inserted");
+                }
             }
         }
 
