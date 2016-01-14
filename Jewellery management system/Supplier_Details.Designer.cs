@@ -44,7 +44,7 @@
             this.lbl_supplierId = new System.Windows.Forms.Label();
             this.cbo_name = new System.Windows.Forms.ComboBox();
             this.cbo_title = new System.Windows.Forms.ComboBox();
-            this.cbo_customerId = new System.Windows.Forms.ComboBox();
+            this.cbo_supplierId = new System.Windows.Forms.ComboBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
@@ -82,10 +82,14 @@
             this.lbl_eccno = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label22 = new System.Windows.Forms.Label();
+            this.supply_dataGridView = new System.Windows.Forms.DataGridView();
+            this.supp_typ = new System.Windows.Forms.Label();
+            this.cbo_supplier_type = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.supply_dataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // cusdetails
@@ -101,7 +105,7 @@
             // 
             // btn_exit
             // 
-            this.btn_exit.Location = new System.Drawing.Point(852, 370);
+            this.btn_exit.Location = new System.Drawing.Point(852, 420);
             this.btn_exit.Name = "btn_exit";
             this.btn_exit.Size = new System.Drawing.Size(71, 26);
             this.btn_exit.TabIndex = 52;
@@ -111,7 +115,7 @@
             // 
             // btn_reset
             // 
-            this.btn_reset.Location = new System.Drawing.Point(775, 370);
+            this.btn_reset.Location = new System.Drawing.Point(775, 420);
             this.btn_reset.Name = "btn_reset";
             this.btn_reset.Size = new System.Drawing.Size(71, 26);
             this.btn_reset.TabIndex = 51;
@@ -120,7 +124,7 @@
             // 
             // btn_delete
             // 
-            this.btn_delete.Location = new System.Drawing.Point(698, 370);
+            this.btn_delete.Location = new System.Drawing.Point(698, 420);
             this.btn_delete.Name = "btn_delete";
             this.btn_delete.Size = new System.Drawing.Size(71, 26);
             this.btn_delete.TabIndex = 50;
@@ -129,7 +133,7 @@
             // 
             // btn_update
             // 
-            this.btn_update.Location = new System.Drawing.Point(621, 370);
+            this.btn_update.Location = new System.Drawing.Point(621, 420);
             this.btn_update.Name = "btn_update";
             this.btn_update.Size = new System.Drawing.Size(71, 26);
             this.btn_update.TabIndex = 49;
@@ -138,7 +142,7 @@
             // 
             // btn_save
             // 
-            this.btn_save.Location = new System.Drawing.Point(541, 370);
+            this.btn_save.Location = new System.Drawing.Point(541, 420);
             this.btn_save.Name = "btn_save";
             this.btn_save.Size = new System.Drawing.Size(71, 26);
             this.btn_save.TabIndex = 48;
@@ -148,6 +152,8 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.cbo_supplier_type);
+            this.panel1.Controls.Add(this.supp_typ);
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.cumpulsory);
             this.panel1.Controls.Add(this.lbl_name);
@@ -157,7 +163,7 @@
             this.panel1.Controls.Add(this.lbl_supplierId);
             this.panel1.Controls.Add(this.cbo_name);
             this.panel1.Controls.Add(this.cbo_title);
-            this.panel1.Controls.Add(this.cbo_customerId);
+            this.panel1.Controls.Add(this.cbo_supplierId);
             this.panel1.Location = new System.Drawing.Point(62, 50);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(837, 83);
@@ -201,7 +207,7 @@
             // 
             // txt_newSupplierID
             // 
-            this.txt_newSupplierID.Location = new System.Drawing.Point(425, 16);
+            this.txt_newSupplierID.Location = new System.Drawing.Point(607, 14);
             this.txt_newSupplierID.Name = "txt_newSupplierID";
             this.txt_newSupplierID.Size = new System.Drawing.Size(100, 20);
             this.txt_newSupplierID.TabIndex = 67;
@@ -209,7 +215,7 @@
             // lbl_newSupplierId
             // 
             this.lbl_newSupplierId.AutoSize = true;
-            this.lbl_newSupplierId.Location = new System.Drawing.Point(284, 19);
+            this.lbl_newSupplierId.Location = new System.Drawing.Point(466, 17);
             this.lbl_newSupplierId.Name = "lbl_newSupplierId";
             this.lbl_newSupplierId.Size = new System.Drawing.Size(131, 13);
             this.lbl_newSupplierId.TabIndex = 66;
@@ -245,13 +251,13 @@
             this.cbo_title.Size = new System.Drawing.Size(121, 21);
             this.cbo_title.TabIndex = 63;
             // 
-            // cbo_customerId
+            // cbo_supplierId
             // 
-            this.cbo_customerId.FormattingEnabled = true;
-            this.cbo_customerId.Location = new System.Drawing.Point(101, 14);
-            this.cbo_customerId.Name = "cbo_customerId";
-            this.cbo_customerId.Size = new System.Drawing.Size(121, 21);
-            this.cbo_customerId.TabIndex = 62;
+            this.cbo_supplierId.FormattingEnabled = true;
+            this.cbo_supplierId.Location = new System.Drawing.Point(101, 14);
+            this.cbo_supplierId.Name = "cbo_supplierId";
+            this.cbo_supplierId.Size = new System.Drawing.Size(121, 21);
+            this.cbo_supplierId.TabIndex = 62;
             // 
             // panel2
             // 
@@ -578,7 +584,7 @@
             // panel4
             // 
             this.panel4.Controls.Add(this.label22);
-            this.panel4.Location = new System.Drawing.Point(12, 352);
+            this.panel4.Location = new System.Drawing.Point(12, 392);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(222, 54);
             this.panel4.TabIndex = 69;
@@ -592,11 +598,40 @@
             this.label22.TabIndex = 0;
             this.label22.Text = "Help panel like Shortcuts and others here";
             // 
+            // supply_dataGridView
+            // 
+            this.supply_dataGridView.AllowUserToAddRows = false;
+            this.supply_dataGridView.AllowUserToDeleteRows = false;
+            this.supply_dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.supply_dataGridView.Location = new System.Drawing.Point(35, 334);
+            this.supply_dataGridView.Name = "supply_dataGridView";
+            this.supply_dataGridView.ReadOnly = true;
+            this.supply_dataGridView.Size = new System.Drawing.Size(875, 78);
+            this.supply_dataGridView.TabIndex = 70;
+            // 
+            // supp_typ
+            // 
+            this.supp_typ.AutoSize = true;
+            this.supp_typ.Location = new System.Drawing.Point(251, 17);
+            this.supp_typ.Name = "supp_typ";
+            this.supp_typ.Size = new System.Drawing.Size(72, 13);
+            this.supp_typ.TabIndex = 72;
+            this.supp_typ.Text = "Supplier Type";
+            // 
+            // cbo_supplier_type
+            // 
+            this.cbo_supplier_type.FormattingEnabled = true;
+            this.cbo_supplier_type.Location = new System.Drawing.Point(330, 13);
+            this.cbo_supplier_type.Name = "cbo_supplier_type";
+            this.cbo_supplier_type.Size = new System.Drawing.Size(121, 21);
+            this.cbo_supplier_type.TabIndex = 73;
+            // 
             // Supplier_Details
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(947, 425);
+            this.ClientSize = new System.Drawing.Size(947, 458);
+            this.Controls.Add(this.supply_dataGridView);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
@@ -618,6 +653,7 @@
             this.panel3.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.supply_dataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -640,7 +676,7 @@
         private System.Windows.Forms.Label lbl_supplierId;
         private System.Windows.Forms.ComboBox cbo_name;
         private System.Windows.Forms.ComboBox cbo_title;
-        private System.Windows.Forms.ComboBox cbo_customerId;
+        private System.Windows.Forms.ComboBox cbo_supplierId;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
@@ -678,5 +714,8 @@
         private System.Windows.Forms.Label lbl_eccno;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.DataGridView supply_dataGridView;
+        private System.Windows.Forms.ComboBox cbo_supplier_type;
+        private System.Windows.Forms.Label supp_typ;
     }
 }

@@ -7,3 +7,4 @@ C:\Users\SJNeyos\Desktop\newrepossss\DAL\bin\Debug\DAL.dll
 C:\Users\SJNeyos\Desktop\newrepossss\DAL\bin\Debug\DAL.pdb
 C:\Users\SJNeyos\Desktop\newrepossss\DAL\obj\Debug\DAL.dll
 C:\Users\SJNeyos\Desktop\newrepossss\DAL\obj\Debug\DAL.pdb
+C:\Users\SJNeyos\Desktop\newrepossss\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
