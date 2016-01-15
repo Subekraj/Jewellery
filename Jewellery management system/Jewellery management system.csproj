@@ -76,7 +76,6 @@
     <Compile Include="CustomerDetails.Designer.cs">
       <DependentUpon>CustomerDetails.cs</DependentUpon>
     </Compile>
-    <Compile Include="Customer_Details_Update.Designer.cs" />
     <Compile Include="EditCategory.cs">
       <SubType>Form</SubType>
     </Compile>

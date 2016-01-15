@@ -10,7 +10,7 @@ namespace DAL
 {
    public class DOA
     {
-        public static string connectionstr = "Data Source=APSARA-PC;Initial Catalog=Gold;Integrated Security=True";
+        public static string connectionstr = "Data Source=Localhost;Initial Catalog=Gold;Integrated Security=True";
 
         public static SqlConnection getconnection()
         {
