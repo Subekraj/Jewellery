@@ -39,5 +39,27 @@ namespace BLL
 
         }
 
+        public int UpdateIntoTable(int syn_no, int barcode, string category, string item, decimal cost_price, decimal sell_price, decimal mark_price, int unit, int stock, int minimum, int maximum)
+        {
+
+            SqlParameter[] parm = new SqlParameter[]{
+
+                new SqlParameter("@syn_no",syn_no),
+                new SqlParameter("@barcode",barcode),
+                new SqlParameter("@category",category),
+                new SqlParameter("@item",item),
+                new SqlParameter("@cost_price",cost_price),
+                new SqlParameter("@sell_price",sell_price),
+                new SqlParameter("@mark_price",mark_price),
+                new SqlParameter("@unit",unit),
+                new SqlParameter("@stock",stock),
+                new SqlParameter("@minimum",minimum),
+                new SqlParameter("@maximum",maximum)
+            };
+
+            return DOA.IDU("update table item_add_update set syn_no=@syn_no,barcode=@barcode,category=@category,item=@item,cost_price=@cost_price,sell_price= @sell_price, mark_price=@mark_price,unit=@unit,stock=@stock,minimum= @minimum,maximum= @maximum", parm);
+
+        }
+
     }
 }
