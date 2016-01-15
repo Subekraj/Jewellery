@@ -17,3 +17,6 @@ C:\Users\Utshab Luitel\Desktop\GidHub\Jewellery management system\Jewellery mana
 C:\Users\SJNeyos\Desktop\Jewellery management system\Jewellery\Jewellery management system\bin\Debug\Jewellery management system.exe.config
 C:\Users\SJNeyos\Desktop\Jewellery management system\Jewellery\Jewellery management system\obj\Debug\Jewellery management system.exe
 C:\Users\SJNeyos\Desktop\Jewellery management system\Jewellery\Jewellery management system\obj\Debug\Jewellery management system.pdb
+C:\Users\SJNeyos\Desktop\New folder (2)\Jewellery management system\bin\Debug\Jewellery management system.exe.config
+C:\Users\SJNeyos\Desktop\New folder (2)\Jewellery management system\obj\Debug\Jewellery management system.exe
+C:\Users\SJNeyos\Desktop\New folder (2)\Jewellery management system\obj\Debug\Jewellery management system.pdb

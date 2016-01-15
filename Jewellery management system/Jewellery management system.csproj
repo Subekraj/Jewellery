@@ -58,6 +58,25 @@
     <Compile Include="AddProduct.Designer.cs">
       <DependentUpon>AddProduct.cs</DependentUpon>
     </Compile>
+    <Compile Include="Add_Update_Delete_Items.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add_Update_Delete_Items.Designer.cs">
+      <DependentUpon>Add_Update_Delete_Items.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add_Update_Delete_Items_update.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add_Update_Delete_Items_update.Designer.cs">
+      <DependentUpon>Add_Update_Delete_Items_update.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerDetails.Designer.cs">
+      <DependentUpon>CustomerDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customer_Details_Update.Designer.cs" />
     <Compile Include="EditCategory.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -72,12 +91,34 @@
     <Compile Include="PurchaseBook.Designer.cs">
       <DependentUpon>PurchaseBook.cs</DependentUpon>
     </Compile>
+    <Compile Include="Supplier_Details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supplier_Details.Designer.cs">
+      <DependentUpon>Supplier_Details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Supplier_details_update.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supplier_details_update.Designer.cs">
+      <DependentUpon>Supplier_details_update.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="AddCategory.resx">
       <DependentUpon>AddCategory.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AddProduct.resx">
       <DependentUpon>AddProduct.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Add_Update_Delete_Items.resx">
+      <DependentUpon>Add_Update_Delete_Items.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add_Update_Delete_Items_update.resx">
+      <DependentUpon>Add_Update_Delete_Items_update.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerDetails.resx">
+      <DependentUpon>CustomerDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer_Details_Update.resx" />
     <EmbeddedResource Include="EditCategory.resx">
       <DependentUpon>EditCategory.cs</DependentUpon>
     </EmbeddedResource>
@@ -92,6 +133,12 @@
     </Compile>
     <EmbeddedResource Include="PurchaseBook.resx">
       <DependentUpon>PurchaseBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supplier_Details.resx">
+      <DependentUpon>Supplier_Details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supplier_details_update.resx">
+      <DependentUpon>Supplier_details_update.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
