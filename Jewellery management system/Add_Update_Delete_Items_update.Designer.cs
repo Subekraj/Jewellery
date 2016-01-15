@@ -59,6 +59,7 @@
             this.cbo_category = new System.Windows.Forms.ComboBox();
             this.cbo_syn = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.ADU_dataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbx_barcode)).BeginInit();
             this.panel1.SuspendLayout();
@@ -98,6 +99,7 @@
             this.btn_update.TabIndex = 38;
             this.btn_update.Text = "update";
             this.btn_update.UseVisualStyleBackColor = true;
+            this.btn_update.Click += new System.EventHandler(this.btn_update_Click);
             // 
             // txt_search
             // 
@@ -323,9 +325,20 @@
             this.label1.ForeColor = System.Drawing.Color.DarkRed;
             this.label1.Location = new System.Drawing.Point(27, 20);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(221, 20);
+            this.label1.Size = new System.Drawing.Size(225, 20);
             this.label1.TabIndex = 13;
-            this.label1.Text = "Add,Update and Delete Items";
+            this.label1.Text = "Add,Update and Delete Items:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.DarkRed;
+            this.label2.Location = new System.Drawing.Point(247, 20);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(103, 20);
+            this.label2.TabIndex = 13;
+            this.label2.Text = "Update Form";
             // 
             // Add_Update_Delete_Items_update
             // 
@@ -361,6 +374,7 @@
             this.Controls.Add(this.cbo_item);
             this.Controls.Add(this.cbo_category);
             this.Controls.Add(this.cbo_syn);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "Add_Update_Delete_Items_update";
             this.Text = "Add_Update_Delete_Items_update";
@@ -406,5 +420,6 @@
         public System.Windows.Forms.ComboBox cbo_category;
         public System.Windows.Forms.ComboBox cbo_syn;
         public System.Windows.Forms.Label label1;
+        public System.Windows.Forms.Label label2;
     }
 }
