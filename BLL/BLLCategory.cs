@@ -24,8 +24,29 @@ namespace BLL
         //take all data from database
         public DataTable getalldata()
         {
-            DataTable dt = new DataTable();
+         
             return DOA.getdata("select * from tbl_category", null);
+        }
+        //category name pull
+        public DataTable getcategoryname(int category_id)
+        {
+            SqlParameter[] parm = new SqlParameter[]
+                  {
+
+                      new SqlParameter("@category_id",category_id)
+
+                  };
+            return DOA.getdata("select * from tbl_category where category_id = @category_id", parm);
+        }
+        //category edit
+        public int editcategory(string category_name, int category_id)
+        {
+            SqlParameter[] parm = new SqlParameter[]
+                {
+                    new SqlParameter("@category_name",category_name),
+                    new SqlParameter("@category_id",category_id)
+                };
+            return DOA.IDU("update tbl_category set category_name=@category_name where category_id=@category_id",parm);
         }
     }
 }

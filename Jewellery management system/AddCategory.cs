@@ -18,6 +18,8 @@ namespace Jewellery_management_system
             InitializeComponent();
         }
         BLLCategory bllcat = new BLLCategory();
+   
+
         private void btnaddcategory_Click(object sender, EventArgs e)
         {
             if (txtcategoryname.Text == "")
@@ -52,10 +54,18 @@ namespace Jewellery_management_system
         private void AddCategory_Load(object sender, EventArgs e)
         {
             showingridwiew();
+            
+
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void dataGridView1_RowHeaderMouseDoubleClick(object sender, DataGridViewCellMouseEventArgs e)
         {
+            EditCategory edtcat = new EditCategory();
+            edtcat.txteditcategoryname.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
+            edtcat.label3.Text= dataGridView1.CurrentRow.Cells[0].Value.ToString();
+
+            edtcat.Show();
+            showingridwiew();
 
         }
     }
