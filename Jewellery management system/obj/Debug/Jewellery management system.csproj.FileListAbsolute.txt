@@ -42,3 +42,4 @@ C:\Users\SJNeyos\Desktop\New folder (2)\Jewellery\Jewellery management system\bi
 C:\Users\SJNeyos\Desktop\New folder (2)\Jewellery\Jewellery management system\bin\Debug\DAL.dll
 C:\Users\SJNeyos\Desktop\New folder (2)\Jewellery\Jewellery management system\bin\Debug\BLL.pdb
 C:\Users\SJNeyos\Desktop\New folder (2)\Jewellery\Jewellery management system\bin\Debug\DAL.pdb
+C:\Users\SJNeyos\Desktop\New folder (2)\Jewellery\Jewellery management system\obj\Debug\Jewellery_management_system.Supplier_opening_ballance.resources

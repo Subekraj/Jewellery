@@ -7,3 +7,4 @@ C:\Users\SJNeyos\Desktop\New folder (2)\Jewellery\DAL\bin\Debug\DAL.dll
 C:\Users\SJNeyos\Desktop\New folder (2)\Jewellery\DAL\bin\Debug\DAL.pdb
 C:\Users\SJNeyos\Desktop\New folder (2)\Jewellery\DAL\obj\Debug\DAL.dll
 C:\Users\SJNeyos\Desktop\New folder (2)\Jewellery\DAL\obj\Debug\DAL.pdb
+C:\Users\SJNeyos\Desktop\New folder (2)\Jewellery\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache

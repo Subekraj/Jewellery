@@ -76,6 +76,12 @@
     <Compile Include="CustomerDetails.Designer.cs">
       <DependentUpon>CustomerDetails.cs</DependentUpon>
     </Compile>
+    <Compile Include="Customer_Details_Update.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customer_Details_Update.Designer.cs">
+      <DependentUpon>Customer_Details_Update.cs</DependentUpon>
+    </Compile>
     <Compile Include="EditCategory.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -102,6 +108,12 @@
     <Compile Include="Supplier_details_update.Designer.cs">
       <DependentUpon>Supplier_details_update.cs</DependentUpon>
     </Compile>
+    <Compile Include="Supplier_opening_ballance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supplier_opening_ballance.Designer.cs">
+      <DependentUpon>Supplier_opening_ballance.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="AddCategory.resx">
       <DependentUpon>AddCategory.cs</DependentUpon>
     </EmbeddedResource>
@@ -117,7 +129,9 @@
     <EmbeddedResource Include="CustomerDetails.resx">
       <DependentUpon>CustomerDetails.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Customer_Details_Update.resx" />
+    <EmbeddedResource Include="Customer_Details_Update.resx">
+      <DependentUpon>Customer_Details_Update.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="EditCategory.resx">
       <DependentUpon>EditCategory.cs</DependentUpon>
     </EmbeddedResource>
@@ -139,6 +153,9 @@
     <EmbeddedResource Include="Supplier_details_update.resx">
       <DependentUpon>Supplier_details_update.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Supplier_opening_ballance.resx">
+      <DependentUpon>Supplier_opening_ballance.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -150,7 +167,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BLL\BLL.csproj">
