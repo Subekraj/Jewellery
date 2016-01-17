@@ -16,7 +16,7 @@ namespace Jewellery_management_system
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Supplier_opening_ballance());
+            Application.Run(new Account_and_journal_entry());
 
         }
 

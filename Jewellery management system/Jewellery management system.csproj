@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Account_and_journal_entry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Account_and_journal_entry.Designer.cs">
+      <DependentUpon>Account_and_journal_entry.cs</DependentUpon>
+    </Compile>
     <Compile Include="AddCategory.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -114,6 +120,9 @@
     <Compile Include="Supplier_opening_ballance.Designer.cs">
       <DependentUpon>Supplier_opening_ballance.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Account_and_journal_entry.resx">
+      <DependentUpon>Account_and_journal_entry.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AddCategory.resx">
       <DependentUpon>AddCategory.cs</DependentUpon>
     </EmbeddedResource>

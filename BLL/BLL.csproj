@@ -40,6 +40,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BLLAccounts_Journal_entry.cs" />
     <Compile Include="BLLCategory.cs" />
     <Compile Include="BLLCustomerDetails.cs" />
     <Compile Include="BLLInvoice.cs" />
