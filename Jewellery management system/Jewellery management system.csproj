@@ -58,23 +58,11 @@
     <Compile Include="AddCategory.Designer.cs">
       <DependentUpon>AddCategory.cs</DependentUpon>
     </Compile>
-    <Compile Include="AddProduct.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="AddProduct.Designer.cs">
-      <DependentUpon>AddProduct.cs</DependentUpon>
-    </Compile>
     <Compile Include="Add_Update_Delete_Items.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Add_Update_Delete_Items.Designer.cs">
       <DependentUpon>Add_Update_Delete_Items.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Add_Update_Delete_Items_update.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Add_Update_Delete_Items_update.Designer.cs">
-      <DependentUpon>Add_Update_Delete_Items_update.cs</DependentUpon>
     </Compile>
     <Compile Include="CustomerDetails.cs">
       <SubType>Form</SubType>
@@ -93,6 +81,12 @@
     </Compile>
     <Compile Include="EditCategory.Designer.cs">
       <DependentUpon>EditCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Payment_details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Payment_details.Designer.cs">
+      <DependentUpon>Payment_details.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -126,14 +120,8 @@
     <EmbeddedResource Include="AddCategory.resx">
       <DependentUpon>AddCategory.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AddProduct.resx">
-      <DependentUpon>AddProduct.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Add_Update_Delete_Items.resx">
       <DependentUpon>Add_Update_Delete_Items.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Add_Update_Delete_Items_update.resx">
-      <DependentUpon>Add_Update_Delete_Items_update.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CustomerDetails.resx">
       <DependentUpon>CustomerDetails.cs</DependentUpon>
@@ -143,6 +131,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="EditCategory.resx">
       <DependentUpon>EditCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Payment_details.resx">
+      <DependentUpon>Payment_details.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

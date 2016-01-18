@@ -10,22 +10,11 @@ using System.Windows.Forms;
 
 namespace Jewellery_management_system
 {
-    public partial class Customer_Details_Update : Form
+    public partial class Payment_details : Form
     {
-        public Customer_Details_Update()
+        public Payment_details()
         {
             InitializeComponent();
-        }
-
-        private void btn_exit_Click(object sender, EventArgs e)
-        {
-            this.Close();
-           
-        }
-
-        private void Customer_Details_Update_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

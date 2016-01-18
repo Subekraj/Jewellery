@@ -74,31 +74,36 @@ namespace Jewellery_management_system
 
         private void txt_new_id_Load(object sender, EventArgs e)
         {
-            DataTable dt = aje.showalldata();
-            if (dt.Rows.Count > 0)
-            {
-                dataGridView_adddata.DataSource = dt;
-            }
+           
         }
 
         private void btn_save_Click(object sender, EventArgs e)
         {
-          
+            int insert = aje.InsertIntoTable(Convert.ToDateTime(dtp_date.Text), cbo_voucher_type.Text, Convert.ToInt32(txt_new_id.Text), Convert.ToInt32(cbo_existing_vid.Text), cbo_ac_name.Text, cbo_dr_cr.Text, Convert.ToDecimal(txt_amount.Text), Convert.ToDecimal(txt_debit.Text), Convert.ToDecimal(txt_credit.Text));
+            if (insert > 0)
+            {
+                MessageBox.Show("data inserted...");
+            }
         }
 
         private void btn_add_Click(object sender, EventArgs e)
-        {
+        { int s = 1;
             if (cbo_voucher_type.Text == "" || txt_new_id.Text == "" || cbo_existing_vid.Text == "" || cbo_existing_vid.Text == "" || cbo_ac_name.Text == "" || txt_amount.Text == "" || txt_narration.Text == "")
             {
                 MessageBox.Show("the input are empty..");
             }
             else
             {
-                int insert = aje.InsertIntoTable(Convert.ToDateTime(dtp_date.Text), cbo_voucher_type.Text, Convert.ToInt32(txt_new_id.Text), Convert.ToInt32(cbo_existing_vid.Text), cbo_ac_name.Text, cbo_dr_cr.Text, Convert.ToDecimal(txt_amount.Text), Convert.ToDecimal(txt_debit.Text), Convert.ToDecimal(txt_credit.Text));
-                if (insert > 0)
-                {
-                    MessageBox.Show("data inserted...");
-                }
+               // dataGridView_adddata.Rows.Add(); // value not passsing her efro text box to datagrid view 
+                dataGridView_adddata.Rows[s].Cells["date"].Value = dtp_date.ToString();
+                dataGridView_adddata.Rows[s].Cells["voucher_type"].Value = cbo_voucher_type.Text;
+                dataGridView_adddata.Rows[s].Cells["account_name"].Value = cbo_ac_name.Text;
+                dataGridView_adddata.Rows[s].Cells["dr_cr"].Value = cbo_dr_cr.Text;
+                dataGridView_adddata.Rows[s].Cells["amount"].Value = txt_amount.Text;
+                dataGridView_adddata.Rows[s].Cells["narration"].Value = txt_narration.Text;
+                dataGridView_adddata.Rows[s].Cells["debit"].Value = txt_debit.Text;
+                dataGridView_adddata.Rows[s].Cells["credit"].Value = txt_credit.Text;
+                s++;
             }
         }
 

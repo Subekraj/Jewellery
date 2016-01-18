@@ -25,9 +25,6 @@ C:\Users\SJNeyos\Desktop\New folder (2)\Jewellery\Jewellery management system\ob
 C:\Users\SJNeyos\Desktop\New folder (2)\Jewellery\Jewellery management system\obj\Debug\Jewellery management system.pdb
 C:\Users\SJNeyos\Desktop\New folder (2)\Jewellery\Jewellery management system\obj\Debug\Jewellery management system.csprojResolveAssemblyReference.cache
 C:\Users\SJNeyos\Desktop\New folder (2)\Jewellery\Jewellery management system\obj\Debug\Jewellery_management_system.AddCategory.resources
-C:\Users\SJNeyos\Desktop\New folder (2)\Jewellery\Jewellery management system\obj\Debug\Jewellery_management_system.AddProduct.resources
-C:\Users\SJNeyos\Desktop\New folder (2)\Jewellery\Jewellery management system\obj\Debug\Jewellery_management_system.Add_Update_Delete_Items.resources
-C:\Users\SJNeyos\Desktop\New folder (2)\Jewellery\Jewellery management system\obj\Debug\Jewellery_management_system.Add_Update_Delete_Items_update.resources
 C:\Users\SJNeyos\Desktop\New folder (2)\Jewellery\Jewellery management system\obj\Debug\Jewellery_management_system.CustomerDetails.resources
 C:\Users\SJNeyos\Desktop\New folder (2)\Jewellery\Jewellery management system\obj\Debug\Jewellery_management_system.Customer_Details_Update.resources
 C:\Users\SJNeyos\Desktop\New folder (2)\Jewellery\Jewellery management system\obj\Debug\Jewellery_management_system.EditCategory.resources
@@ -44,3 +41,5 @@ C:\Users\SJNeyos\Desktop\New folder (2)\Jewellery\Jewellery management system\bi
 C:\Users\SJNeyos\Desktop\New folder (2)\Jewellery\Jewellery management system\bin\Debug\DAL.pdb
 C:\Users\SJNeyos\Desktop\New folder (2)\Jewellery\Jewellery management system\obj\Debug\Jewellery_management_system.Supplier_opening_ballance.resources
 C:\Users\SJNeyos\Desktop\New folder (2)\Jewellery\Jewellery management system\obj\Debug\Jewellery_management_system.Account_and_journal_entry.resources
+C:\Users\SJNeyos\Desktop\New folder (2)\Jewellery\Jewellery management system\obj\Debug\Jewellery_management_system.add_update.resources
+C:\Users\SJNeyos\Desktop\New folder (2)\Jewellery\Jewellery management system\obj\Debug\Jewellery_management_system.Payment_details.resources

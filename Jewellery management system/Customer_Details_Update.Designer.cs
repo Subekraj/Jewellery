@@ -475,6 +475,7 @@
             this.Controls.Add(this.cbo_customerId);
             this.Name = "Customer_Details_Update";
             this.Text = "Customer_Details_Update";
+            this.Load += new System.EventHandler(this.Customer_Details_Update_Load);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.customerData)).EndInit();
             this.ResumeLayout(false);

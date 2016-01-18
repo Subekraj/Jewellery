@@ -62,6 +62,14 @@
             this.label17 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.cbo_existing_vid = new System.Windows.Forms.ComboBox();
+            this.date = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.voucher_type = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.account_name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dr_cr = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.amount = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.narration = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.debit = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.credit = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_adddata)).BeginInit();
             this.SuspendLayout();
             // 
@@ -210,6 +218,15 @@
             this.dataGridView_adddata.AllowUserToAddRows = false;
             this.dataGridView_adddata.AllowUserToDeleteRows = false;
             this.dataGridView_adddata.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView_adddata.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.date,
+            this.voucher_type,
+            this.account_name,
+            this.dr_cr,
+            this.amount,
+            this.narration,
+            this.debit,
+            this.credit});
             this.dataGridView_adddata.Location = new System.Drawing.Point(42, 218);
             this.dataGridView_adddata.Name = "dataGridView_adddata";
             this.dataGridView_adddata.ReadOnly = true;
@@ -372,6 +389,54 @@
             this.cbo_existing_vid.Size = new System.Drawing.Size(121, 21);
             this.cbo_existing_vid.TabIndex = 13;
             // 
+            // date
+            // 
+            this.date.HeaderText = "Date";
+            this.date.Name = "date";
+            this.date.ReadOnly = true;
+            // 
+            // voucher_type
+            // 
+            this.voucher_type.HeaderText = "Voucher Type";
+            this.voucher_type.Name = "voucher_type";
+            this.voucher_type.ReadOnly = true;
+            // 
+            // account_name
+            // 
+            this.account_name.HeaderText = "Account Name";
+            this.account_name.Name = "account_name";
+            this.account_name.ReadOnly = true;
+            // 
+            // dr_cr
+            // 
+            this.dr_cr.HeaderText = "Debit/Credit";
+            this.dr_cr.Name = "dr_cr";
+            this.dr_cr.ReadOnly = true;
+            // 
+            // amount
+            // 
+            this.amount.HeaderText = "Amount";
+            this.amount.Name = "amount";
+            this.amount.ReadOnly = true;
+            // 
+            // narration
+            // 
+            this.narration.HeaderText = "Narration";
+            this.narration.Name = "narration";
+            this.narration.ReadOnly = true;
+            // 
+            // debit
+            // 
+            this.debit.HeaderText = "Debit";
+            this.debit.Name = "debit";
+            this.debit.ReadOnly = true;
+            // 
+            // credit
+            // 
+            this.credit.HeaderText = "Credit";
+            this.credit.Name = "credit";
+            this.credit.ReadOnly = true;
+            // 
             // Account_and_journal_entry
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -455,5 +520,13 @@
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.ComboBox cbo_existing_vid;
+        private System.Windows.Forms.DataGridViewTextBoxColumn date;
+        private System.Windows.Forms.DataGridViewTextBoxColumn voucher_type;
+        private System.Windows.Forms.DataGridViewTextBoxColumn account_name;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dr_cr;
+        private System.Windows.Forms.DataGridViewTextBoxColumn amount;
+        private System.Windows.Forms.DataGridViewTextBoxColumn narration;
+        private System.Windows.Forms.DataGridViewTextBoxColumn debit;
+        private System.Windows.Forms.DataGridViewTextBoxColumn credit;
     }
 }
