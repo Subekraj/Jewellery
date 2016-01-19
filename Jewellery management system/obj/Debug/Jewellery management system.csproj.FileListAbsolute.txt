@@ -43,3 +43,4 @@ C:\Users\SJNeyos\Desktop\New folder (2)\Jewellery\Jewellery management system\ob
 C:\Users\SJNeyos\Desktop\New folder (2)\Jewellery\Jewellery management system\obj\Debug\Jewellery_management_system.add_update.resources
 C:\Users\SJNeyos\Desktop\New folder (2)\Jewellery\Jewellery management system\obj\Debug\Jewellery_management_system.Payment_details.resources
 C:\Users\SJNeyos\Desktop\New folder (2)\Jewellery\Jewellery management system\obj\Debug\Jewellery_management_system.sms_api_test.resources
+C:\Users\SJNeyos\Desktop\New folder (2)\Jewellery\Jewellery management system\obj\Debug\Jewellery_management_system.point_reedem_details.resources
