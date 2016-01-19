@@ -50,7 +50,6 @@ namespace Jewellery_management_system
             this.calselling_price = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lbl_search = new System.Windows.Forms.Label();
             this.txt_search = new System.Windows.Forms.TextBox();
-            this.btn_update = new System.Windows.Forms.Button();
             this.btn_reset = new System.Windows.Forms.Button();
             this.btn_exit = new System.Windows.Forms.Button();
             this.btn_save = new System.Windows.Forms.Button();
@@ -229,15 +228,6 @@ namespace Jewellery_management_system
             this.txt_search.Size = new System.Drawing.Size(436, 20);
             this.txt_search.TabIndex = 9;
             // 
-            // btn_update
-            // 
-            this.btn_update.Location = new System.Drawing.Point(533, 486);
-            this.btn_update.Name = "btn_update";
-            this.btn_update.Size = new System.Drawing.Size(87, 31);
-            this.btn_update.TabIndex = 10;
-            this.btn_update.Text = "update";
-            this.btn_update.UseVisualStyleBackColor = true;
-            // 
             // btn_reset
             // 
             this.btn_reset.Location = new System.Drawing.Point(626, 486);
@@ -246,6 +236,7 @@ namespace Jewellery_management_system
             this.btn_reset.TabIndex = 10;
             this.btn_reset.Text = "reset";
             this.btn_reset.UseVisualStyleBackColor = true;
+            this.btn_reset.Click += new System.EventHandler(this.btn_reset_Click);
             // 
             // btn_exit
             // 
@@ -259,7 +250,7 @@ namespace Jewellery_management_system
             // 
             // btn_save
             // 
-            this.btn_save.Location = new System.Drawing.Point(440, 486);
+            this.btn_save.Location = new System.Drawing.Point(533, 486);
             this.btn_save.Name = "btn_save";
             this.btn_save.Size = new System.Drawing.Size(87, 31);
             this.btn_save.TabIndex = 10;
@@ -418,7 +409,6 @@ namespace Jewellery_management_system
             this.Controls.Add(this.btn_exit);
             this.Controls.Add(this.btn_reset);
             this.Controls.Add(this.btn_save);
-            this.Controls.Add(this.btn_update);
             this.Controls.Add(this.txt_search);
             this.Controls.Add(this.lbl_search);
             this.Controls.Add(this.txt_item);
@@ -471,7 +461,6 @@ namespace Jewellery_management_system
         private System.Windows.Forms.DataGridView ADU_dataGridView;
         private System.Windows.Forms.Label lbl_search;
         private System.Windows.Forms.TextBox txt_search;
-        private System.Windows.Forms.Button btn_update;
         private System.Windows.Forms.Button btn_reset;
         private System.Windows.Forms.Button btn_exit;
         private System.Windows.Forms.Button btn_save;

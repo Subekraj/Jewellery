@@ -125,16 +125,16 @@
             this.dataGridView_alldata.AllowUserToAddRows = false;
             this.dataGridView_alldata.AllowUserToDeleteRows = false;
             this.dataGridView_alldata.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView_alldata.Location = new System.Drawing.Point(36, 133);
+            this.dataGridView_alldata.Location = new System.Drawing.Point(36, 150);
             this.dataGridView_alldata.Name = "dataGridView_alldata";
             this.dataGridView_alldata.ReadOnly = true;
-            this.dataGridView_alldata.Size = new System.Drawing.Size(634, 150);
+            this.dataGridView_alldata.Size = new System.Drawing.Size(634, 179);
             this.dataGridView_alldata.TabIndex = 5;
             this.dataGridView_alldata.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // btn_save
             // 
-            this.btn_save.Location = new System.Drawing.Point(433, 303);
+            this.btn_save.Location = new System.Drawing.Point(472, 335);
             this.btn_save.Name = "btn_save";
             this.btn_save.Size = new System.Drawing.Size(95, 35);
             this.btn_save.TabIndex = 6;
@@ -144,7 +144,7 @@
             // 
             // btn_exit
             // 
-            this.btn_exit.Location = new System.Drawing.Point(534, 303);
+            this.btn_exit.Location = new System.Drawing.Point(573, 335);
             this.btn_exit.Name = "btn_exit";
             this.btn_exit.Size = new System.Drawing.Size(97, 35);
             this.btn_exit.TabIndex = 7;
@@ -156,7 +156,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(724, 410);
+            this.ClientSize = new System.Drawing.Size(724, 382);
             this.Controls.Add(this.btn_exit);
             this.Controls.Add(this.btn_save);
             this.Controls.Add(this.dataGridView_alldata);

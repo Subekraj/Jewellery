@@ -27,8 +27,8 @@ namespace Jewellery_management_system
         {
             
         }
+       
 
-     
         private void btn_exit_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -119,8 +119,46 @@ namespace Jewellery_management_system
 
                 i++;
 
+                               
 
             }
+            ClearAllcboitem(this);
+            ClearAllText(this);
+        }
+
+        public void ClearAllText(Control con)//to clear all the text in the textboxes
+
+        {
+            foreach (Control c in con.Controls)
+            {
+                if (c is TextBox)
+                    ((TextBox)c).Clear();
+                else
+                    ClearAllText(c);
+            }
+        }
+        //to clear all the texts in combo box
+        public void ClearAllcboitem(Control con)
+        {
+            foreach (Control c in con.Controls)
+            {
+                if (c is ComboBox)
+                    ((ComboBox)c).ResetText();
+                else
+                    ClearAllcboitem(c);
+            }
+
+        }
+
+        private void btn_reset_Click(object sender, EventArgs e)
+        {
+            ClearAllcboitem(this);
+            ClearAllText(this);
+        }
+
+        private void btn_update_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

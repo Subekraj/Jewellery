@@ -96,17 +96,17 @@
     <Compile Include="PurchaseBook.Designer.cs">
       <DependentUpon>PurchaseBook.cs</DependentUpon>
     </Compile>
+    <Compile Include="sms_api_test.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sms_api_test.Designer.cs">
+      <DependentUpon>sms_api_test.cs</DependentUpon>
+    </Compile>
     <Compile Include="Supplier_Details.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Supplier_Details.Designer.cs">
       <DependentUpon>Supplier_Details.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Supplier_details_update.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Supplier_details_update.Designer.cs">
-      <DependentUpon>Supplier_details_update.cs</DependentUpon>
     </Compile>
     <Compile Include="Supplier_opening_ballance.cs">
       <SubType>Form</SubType>
@@ -147,11 +147,11 @@
     <EmbeddedResource Include="PurchaseBook.resx">
       <DependentUpon>PurchaseBook.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="sms_api_test.resx">
+      <DependentUpon>sms_api_test.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Supplier_Details.resx">
       <DependentUpon>Supplier_Details.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Supplier_details_update.resx">
-      <DependentUpon>Supplier_details_update.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Supplier_opening_ballance.resx">
       <DependentUpon>Supplier_opening_ballance.cs</DependentUpon>
