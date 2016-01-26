@@ -16,7 +16,7 @@ namespace Jewellery_management_system
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new point_reedem_details());
+            Application.Run(new CustomerDetails());
 
         }
 

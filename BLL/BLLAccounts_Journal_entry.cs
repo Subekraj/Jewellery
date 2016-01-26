@@ -11,7 +11,7 @@ namespace BLL
 {
    public class BLLAccounts_Journal_entry
     {
-        public int  InsertIntoTable(DateTime date, string voucher_type, int new_id, int existing_id, string account_name, string dr_cr, decimal amount, decimal debit, decimal credit){
+        public int  InsertIntoTable(DateTime date, string voucher_type, int new_id, int existing_id, string account_name, string dr_cr, decimal amount,string narration){
             SqlParameter[] parm = new SqlParameter[]
             {
                 new SqlParameter("@date",date),
@@ -21,11 +21,11 @@ namespace BLL
                 new SqlParameter("@account_name",account_name),
                 new SqlParameter("@dr_cr",dr_cr),
                 new SqlParameter("@amount",amount),
-                new SqlParameter("@debit",debit),
-                new SqlParameter("@credit",credit)
+                new SqlParameter("@narration",narration)
+               
 
             };
-            return DOA.IDU("insert into tbl_account_journal_entry values(@date,@voucher_type,@new_id,@existing_id,@account_name,@dr_cr,@amount,@debit,@credit)",parm);
+            return DOA.IDU("insert into tbl_account_journal_entry values(@date,@voucher_type,@new_id,@existing_id,@account_name,@dr_cr,@amount,@narration)", parm);
             
             
             }

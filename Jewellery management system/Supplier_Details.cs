@@ -159,6 +159,11 @@ namespace Jewellery_management_system
 
             }
             }
+
+        private void btn_reset_Click(object sender, EventArgs e)
+        {
+
         }
+    }
     }
 

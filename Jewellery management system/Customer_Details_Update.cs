@@ -27,5 +27,15 @@ namespace Jewellery_management_system
         {
 
         }
+
+        private void btn_reset_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_update_Click(object sender, EventArgs e)
+        {
+            //update code
+        }
     }
 }

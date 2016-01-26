@@ -48,6 +48,7 @@
     <Compile Include="BLLItem_Add_Update.cs" />
     <Compile Include="BLLPayment_details.cs" />
     <Compile Include="BLLPurchase.cs" />
+    <Compile Include="BLLPurchase_order_booking.cs" />
     <Compile Include="BllRedeem_points.cs" />
     <Compile Include="BLLSupplier_details.cs" />
     <Compile Include="BLLSupplier_opening_balance.cs" />

@@ -102,6 +102,12 @@
     <Compile Include="PurchaseBook.Designer.cs">
       <DependentUpon>PurchaseBook.cs</DependentUpon>
     </Compile>
+    <Compile Include="purchase_order_booking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="purchase_order_booking.Designer.cs">
+      <DependentUpon>purchase_order_booking.cs</DependentUpon>
+    </Compile>
     <Compile Include="sms_api_test.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -155,6 +161,9 @@
     </Compile>
     <EmbeddedResource Include="PurchaseBook.resx">
       <DependentUpon>PurchaseBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="purchase_order_booking.resx">
+      <DependentUpon>purchase_order_booking.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="sms_api_test.resx">
       <DependentUpon>sms_api_test.cs</DependentUpon>

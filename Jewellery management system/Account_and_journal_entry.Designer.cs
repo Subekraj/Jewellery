@@ -68,8 +68,8 @@
             this.dr_cr = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.amount = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.narration = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.debit = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.credit = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.calnewid = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.calexid = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_adddata)).BeginInit();
             this.SuspendLayout();
             // 
@@ -215,8 +215,9 @@
             // 
             // dataGridView_adddata
             // 
-            this.dataGridView_adddata.AllowUserToAddRows = false;
             this.dataGridView_adddata.AllowUserToDeleteRows = false;
+            this.dataGridView_adddata.AllowUserToOrderColumns = true;
+            this.dataGridView_adddata.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView_adddata.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView_adddata.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.date,
@@ -225,8 +226,8 @@
             this.dr_cr,
             this.amount,
             this.narration,
-            this.debit,
-            this.credit});
+            this.calnewid,
+            this.calexid});
             this.dataGridView_adddata.Location = new System.Drawing.Point(42, 218);
             this.dataGridView_adddata.Name = "dataGridView_adddata";
             this.dataGridView_adddata.ReadOnly = true;
@@ -425,17 +426,19 @@
             this.narration.Name = "narration";
             this.narration.ReadOnly = true;
             // 
-            // debit
+            // calnewid
             // 
-            this.debit.HeaderText = "Debit";
-            this.debit.Name = "debit";
-            this.debit.ReadOnly = true;
+            this.calnewid.HeaderText = "New Id";
+            this.calnewid.Name = "calnewid";
+            this.calnewid.ReadOnly = true;
+            this.calnewid.Visible = false;
             // 
-            // credit
+            // calexid
             // 
-            this.credit.HeaderText = "Credit";
-            this.credit.Name = "credit";
-            this.credit.ReadOnly = true;
+            this.calexid.HeaderText = "Existing ID";
+            this.calexid.Name = "calexid";
+            this.calexid.ReadOnly = true;
+            this.calexid.Visible = false;
             // 
             // Account_and_journal_entry
             // 
@@ -526,7 +529,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dr_cr;
         private System.Windows.Forms.DataGridViewTextBoxColumn amount;
         private System.Windows.Forms.DataGridViewTextBoxColumn narration;
-        private System.Windows.Forms.DataGridViewTextBoxColumn debit;
-        private System.Windows.Forms.DataGridViewTextBoxColumn credit;
+        private System.Windows.Forms.DataGridViewTextBoxColumn calnewid;
+        private System.Windows.Forms.DataGridViewTextBoxColumn calexid;
     }
 }

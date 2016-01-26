@@ -69,6 +69,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.temp_adress = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.btn_add = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
@@ -84,7 +85,6 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.label22 = new System.Windows.Forms.Label();
             this.supply_dataGridView = new System.Windows.Forms.DataGridView();
-            this.btn_add = new System.Windows.Forms.Button();
             this.calsupplier_id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.calsupplier_type = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.calnew_supplier_id = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -137,6 +137,7 @@
             this.btn_reset.TabIndex = 51;
             this.btn_reset.Text = "Reset";
             this.btn_reset.UseVisualStyleBackColor = true;
+            this.btn_reset.Click += new System.EventHandler(this.btn_reset_Click);
             // 
             // btn_delete
             // 
@@ -511,6 +512,16 @@
             this.panel3.Size = new System.Drawing.Size(900, 78);
             this.panel3.TabIndex = 68;
             // 
+            // btn_add
+            // 
+            this.btn_add.Location = new System.Drawing.Point(817, 38);
+            this.btn_add.Name = "btn_add";
+            this.btn_add.Size = new System.Drawing.Size(81, 37);
+            this.btn_add.TabIndex = 4;
+            this.btn_add.Text = "Add";
+            this.btn_add.UseVisualStyleBackColor = true;
+            this.btn_add.Click += new System.EventHandler(this.btn_add_Click);
+            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -656,16 +667,6 @@
             this.supply_dataGridView.Size = new System.Drawing.Size(875, 115);
             this.supply_dataGridView.TabIndex = 70;
             this.supply_dataGridView.RowHeaderMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.supply_dataGridView_RowHeaderMouseDoubleClick);
-            // 
-            // btn_add
-            // 
-            this.btn_add.Location = new System.Drawing.Point(817, 38);
-            this.btn_add.Name = "btn_add";
-            this.btn_add.Size = new System.Drawing.Size(81, 37);
-            this.btn_add.TabIndex = 4;
-            this.btn_add.Text = "Add";
-            this.btn_add.UseVisualStyleBackColor = true;
-            this.btn_add.Click += new System.EventHandler(this.btn_add_Click);
             // 
             // calsupplier_id
             // 

@@ -79,7 +79,18 @@ namespace Jewellery_management_system
 
         private void btn_save_Click(object sender, EventArgs e)
         {
-            int insert = aje.InsertIntoTable(Convert.ToDateTime(dtp_date.Text), cbo_voucher_type.Text, Convert.ToInt32(txt_new_id.Text), Convert.ToInt32(cbo_existing_vid.Text), cbo_ac_name.Text, cbo_dr_cr.Text, Convert.ToDecimal(txt_amount.Text), Convert.ToDecimal(txt_debit.Text), Convert.ToDecimal(txt_credit.Text));
+           DateTime dtp_date_pass = Convert.ToDateTime(dataGridView_adddata.CurrentRow.Cells[0].Value);
+            string cbo_voucher_type_pass = dataGridView_adddata.CurrentRow.Cells[1].Value.ToString();
+
+           string cbo_ac_name_pass = dataGridView_adddata.CurrentRow.Cells[2].Value.ToString();
+           string cbo_dr_cr_pass = dataGridView_adddata.CurrentRow.Cells[3].Value.ToString();
+           decimal txt_amount_pass = Convert.ToDecimal(dataGridView_adddata.CurrentRow.Cells[4].Value);
+           string txt_narration_pass = dataGridView_adddata.CurrentRow.Cells[5].Value.ToString();
+           int txt_new_id_pass = Convert.ToInt32(dataGridView_adddata.CurrentRow.Cells[6].Value);
+           int cbo_existing_vid_pass = Convert.ToInt32(dataGridView_adddata.CurrentRow.Cells[7].Value);
+
+
+            int insert = aje.InsertIntoTable(dtp_date_pass,cbo_voucher_type_pass,txt_new_id_pass,cbo_existing_vid_pass,cbo_ac_name_pass,cbo_dr_cr_pass,txt_amount_pass,txt_narration_pass);
             if (insert > 0)
             {
                 MessageBox.Show("data inserted...");
@@ -94,15 +105,16 @@ namespace Jewellery_management_system
             }
             else
             {
-               // dataGridView_adddata.Rows.Add(); // value not passsing her efro text box to datagrid view 
-                dataGridView_adddata.Rows[s].Cells["date"].Value = dtp_date.ToString();
+                dataGridView_adddata.Rows.Add(); // value not passsing her efro text box to datagrid view 
+                dataGridView_adddata.Rows[s].Cells["date"].Value = dtp_date.Text;
                 dataGridView_adddata.Rows[s].Cells["voucher_type"].Value = cbo_voucher_type.Text;
                 dataGridView_adddata.Rows[s].Cells["account_name"].Value = cbo_ac_name.Text;
                 dataGridView_adddata.Rows[s].Cells["dr_cr"].Value = cbo_dr_cr.Text;
                 dataGridView_adddata.Rows[s].Cells["amount"].Value = txt_amount.Text;
                 dataGridView_adddata.Rows[s].Cells["narration"].Value = txt_narration.Text;
-                dataGridView_adddata.Rows[s].Cells["debit"].Value = txt_debit.Text;
-                dataGridView_adddata.Rows[s].Cells["credit"].Value = txt_credit.Text;
+
+                dataGridView_adddata.Rows[s].Cells["calnewid"].Value = txt_new_id.Text;
+                dataGridView_adddata.Rows[s].Cells["calexid"].Value = cbo_existing_vid.Text;
                 s++;
             }
         }
@@ -114,13 +126,14 @@ namespace Jewellery_management_system
 
             dtp_date.Text = dataGridView_adddata.CurrentRow.Cells[0].Value.ToString();
            cbo_voucher_type.Text = dataGridView_adddata.CurrentRow.Cells[1].Value.ToString();
-          txt_new_id.Text = dataGridView_adddata.CurrentRow.Cells[2].Value.ToString();
-           cbo_existing_vid.Text =dataGridView_adddata.CurrentRow.Cells[3].Value.ToString();
-            cbo_ac_name.Text = dataGridView_adddata.CurrentRow.Cells[4].Value.ToString();
-            cbo_dr_cr.Text = dataGridView_adddata.CurrentRow.Cells[5].Value.ToString();
-            txt_amount.Text = dataGridView_adddata.CurrentRow.Cells[6].Value.ToString();
-            txt_narration.Text = dataGridView_adddata.CurrentRow.Cells[7].Value.ToString();
-       
+         
+            cbo_ac_name.Text = dataGridView_adddata.CurrentRow.Cells[2].Value.ToString();
+            cbo_dr_cr.Text = dataGridView_adddata.CurrentRow.Cells[3].Value.ToString();
+            txt_amount.Text = dataGridView_adddata.CurrentRow.Cells[4].Value.ToString();
+            txt_narration.Text = dataGridView_adddata.CurrentRow.Cells[5].Value.ToString();
+            txt_new_id.Text = dataGridView_adddata.CurrentRow.Cells[6].Value.ToString();
+            cbo_existing_vid.Text = dataGridView_adddata.CurrentRow.Cells[7].Value.ToString();
+
         }
         
     }

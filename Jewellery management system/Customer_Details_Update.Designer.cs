@@ -202,6 +202,7 @@
             this.btn_reset.TabIndex = 51;
             this.btn_reset.Text = "Reset";
             this.btn_reset.UseVisualStyleBackColor = true;
+            this.btn_reset.Click += new System.EventHandler(this.btn_reset_Click);
             // 
             // btn_update
             // 
@@ -211,6 +212,7 @@
             this.btn_update.TabIndex = 49;
             this.btn_update.Text = "Update";
             this.btn_update.UseVisualStyleBackColor = true;
+            this.btn_update.Click += new System.EventHandler(this.btn_update_Click);
             // 
             // txt_email
             // 
